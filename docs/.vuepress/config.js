@@ -1,5 +1,5 @@
 module.exports = {
-    title: '前端进阶',
+    title: 'HUI的星球',
     description: '种一棵树最好的时间是十年前，其次就是现在', // 注入到当前页面的 HTML <head> 中的标签
     head: [
         ['link', { rel: 'icon', href: './img/favicon.png' }], // 增加一个自定义的 favicon(网页标签的图标)
@@ -11,7 +11,7 @@ module.exports = {
         sidebarDepth: 2, // e'b将同时提取markdown中h2 和 h3 标题，显示在侧边栏上。
         lastUpdated: 'Last Updated' // 文档更新时间：每个文件git最后提交的时间
     },
-    base: '/vueDoc/',
+    base: '/',
     configureWebpack: {
         resolve: {
             alias: {

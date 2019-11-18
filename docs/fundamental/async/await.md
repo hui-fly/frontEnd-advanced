@@ -2,7 +2,7 @@
 ## 写在前面
 async 函数是 Generator 函数的语法糖，并且越来越多的人开始研究据说是异步编程终级解决方案的 async/await，那么它到底是怎么处理异步的呢，本文对此作了浅显易懂的阐述
 #### 说明
-本文摘自 边城的理解 [JavaScript 的 async/await](https://segmentfault.com/a/1190000007535316)。
+本文摘自 边城的[理解JavaScript 的 async/await](https://segmentfault.com/a/1190000007535316)。
 ## async 和 await 在干什么
 任意一个名称都是有意义的，先从字面意思来理解。async 是“异步”的简写，而 await 可以认为是 async wait 的简写。所以应该很好理解 async 用于申明一个 function 是异步的，而 await 用于等待一个异步方法执行完成。
 另外还有一个很有意思的语法规定，await 只能出现在 async 函数中。然后细心的朋友会产生一个疑问，如果 await 只能出现在 async 函数中，那这个 async 函数应该怎么调用？
@@ -72,14 +72,14 @@ takeLongTime().then(v => {
 如果改用 async/await 呢，会是这样
 ```javascript
 function takeLongTime() {
-return new Promise(resolve => {
-setTimeout(() => resolve('long_time_value'), 1000);
-});
+  return new Promise(resolve => {
+    setTimeout(() => resolve('long_time_value'), 1000);
+  });
 }
 
 async function test() {
-const v = await takeLongTime();
-console.log(v);
+  const v = await takeLongTime();
+  console.log(v);
 }
 test();
 ```

@@ -12,5 +12,10 @@
         "d": "bash deploy.sh"
     },
     "author": "",
-    "license": "ISC"
+    "license": "ISC",
+    "dependencies": {
+        "leancloud-storage": "^3.15.0",
+        "valine": "^1.3.10",
+        "vuepress-plugin-comment": "^0.7.0"
+    }
 }

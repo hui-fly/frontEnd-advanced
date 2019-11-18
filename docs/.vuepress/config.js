@@ -19,6 +19,14 @@ module.exports = {
             }
         }
     },
+    plugins: [
+        [
+            '@vuepress/register-components',
+            {
+                componentsDir: './components'
+            }
+        ]
+    ],
     // 导航栏
     themeConfig: {
         // 上边栏
@@ -68,6 +76,18 @@ module.exports = {
                 'title': 'HTML',
                 children: [
                     '/fundamental/html/html'
+                ]
+            }, {
+                'title': '技巧',
+                children: [
+                    '/fundamental/skill/调试',
+                    '/fundamental/skill/建立自己的组件库',
+                    '/fundamental/skill/防抖节流'
+                ]
+            }, {
+                'title': 'vue相关',
+                children: [
+                    '/fundamental/vue/computed和watch的区别'
                 ]
             }],
             '/algorithm/': [

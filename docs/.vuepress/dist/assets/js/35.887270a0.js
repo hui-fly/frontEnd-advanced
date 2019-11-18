@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[35],{238:function(t,n,e){"use strict";e.r(n);var s=e(0),l=Object(s.a)({},(function(){var t=this.$createElement,n=this._self._c||t;return n("ContentSlotsDistributor",{attrs:{"slot-key":this.$parent.slotKey}},[n("p",[this._v("不能翻墙了\n把DNS更改为\n192.168.74.102\n如果还不行，把其他的DNS删掉")])])}),[],!1,null,null,null);n.default=l.exports}}]);
